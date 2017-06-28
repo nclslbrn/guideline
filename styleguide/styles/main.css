@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px; }
+
+.site {
+  display: block;
+  width: 100%;
+  min-height: 100%; }
+
+aside,
+main {
+  display: block;
+  float: left; }
+
+aside {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: #333;
+  color: #fff; }
+
+main {
+  position: relative;
+  width: -webkit-calc( 100% - 460px);
+  width: calc( 100% - 460px);
+  margin-left: 380px;
+  min-height: 100vh;
+  background: #fefefe; }
+
+aside section.menu {
+  border-top: 4px double #ccc; }
+  aside section.menu nav ul {
+    list-style-type: none; }
+    aside section.menu nav ul li {
+      margin: 2em 0; }
+    aside section.menu nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      -webkit-transition: all .15s ease-out;
+      transition: all .15s ease-out; }
+      aside section.menu nav ul li a:hover {
+        color: #2d66fc; }
+    aside section.menu nav ul li a::before {
+      content: '―';
+      display: inline-block;
+      margin-right: 0;
+      overflow: hidden;
+      width: 0;
+      line-height: .8em;
+      -webkit-transition: all .15s ease-out;
+      transition: all .15s ease-out; }
+    aside section.menu nav ul li a:hover::before {
+      width: 1em;
+      margin-right: .5em;
+      -webkit-transition: all .15s ease-out;
+      transition: all .15s ease-out; }
+
+main section header {
+  border-bottom: 4px double #ccc; }
+
+main section header h1 {
+  font-size: 3em; }
+
+main section asset {
+  margin-bottom: 10%; }
+
+main section .colors-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  main section .colors-grid color {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 3em;
+    padding-bottom: 20%;
+    -webkit-box-shadow: 0 2px 4px #ccc;
+    box-shadow: 0 2px 4px #ccc; }
+    main section .colors-grid color definition {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1em;
+      background: #fff; }
+    main section .colors-grid color definition ref {
+      display: block;
+      margin: 0 .5em .5em 1em;
+      width: 100%; }
+  main section .colors-grid color:last-child {
+    margin-right: 0; }
+
+.brand-01 {
+  background-color: #241A2E; }
+
+.brand-02 {
+  background-color: #B3152A; }
+
+.brand-03 {
+  background-color: #F5155A; }
+
+.brand-04 {
+  background-color: #F3990E; }
+
+.info {
+  background-color: #d7ecfa; }
+
+.success {
+  background-color: #e1faea; }
+
+.warning {
+  background-color: #fff3d9; }
+
+.error {
+  background-color: #f7e4e1; }

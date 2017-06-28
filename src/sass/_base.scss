@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+.site {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+aside,
+main {
+  display: block;
+  float: left;
+}
+aside{
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+
+  background: #333;
+  color: #fff;
+  //background-image: url(../images/subtle_dots.png);
+}
+main {
+  position: relative;
+  width: calc( 100% - 460px);
+  margin-left: 380px;
+  min-height: 100vh;
+
+  background: #fefefe;
+}
+
+aside section.menu{
+  border-top: 4px double #ccc;
+
+  nav ul {
+    list-style-type: none;
+
+    li { margin: 2em 0;}
+
+    li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      transition: all .15s ease-out;
+
+      &:hover {
+        color: #2d66fc;
+      }
+    }
+
+    li a::before {
+      content: '―';
+      display: inline-block;
+      margin-right: 0;
+      overflow: hidden;
+      width: 0;
+      line-height: .8em;
+
+      transition: all .15s ease-out;
+    }
+    li a:hover::before {
+      width: 1em;
+      margin-right: .5em;
+      transition: all .15s ease-out;
+    }
+  }
+}
+main section {
+  header { border-bottom: 4px double #ccc;}
+  header h1 { font-size: 3em; }
+  asset { margin-bottom: 10%; }
+
+  //COLORS
+  .colors-grid {
+    display: flex;
+    width: 100%;
+
+    color {
+      position: relative;
+      flex: 1;
+      margin-right: 3em;
+      padding-bottom: 20%;
+
+      box-shadow: 0 2px 4px #ccc;
+
+      definition {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1em;
+
+        background: #fff;
+      }
+      definition ref {
+        display: block;
+        margin: 0 .5em .5em 1em;
+        width: 100%;
+      }
+    }
+    color:last-child {
+      margin-right: 0;
+    }
+  }
+}

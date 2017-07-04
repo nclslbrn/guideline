@@ -1,0 +1,40 @@
+<html lang="fr">
+<!--
+	Guideline (https://github.com/nclslbrn/guideline)
+  Guideline is licensed under the GNU General Public License v3.0
+  Author: Nicolas Lebrun
+-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guideline | N.Lebrun</title>
+	<link href="styles/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site">
+    <aside>
+      @@include('./_01-aside.html')
+    </aside>
+
+    <main>
+      @@include('./_02-color.html')
+      @@include('./_03-grid.html')
+      @@include('./_04-typography.html')
+      @@include('./_05-iconography.html')
+      @@include('./_06-layer.html')
+      @@include('./_06-button.html')
+    </main>
+  </div>
+	<script id="__bs_script__">
+	//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+	//]]>
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="scripts/main.min.js"></script>
+
+</body>
+</html>

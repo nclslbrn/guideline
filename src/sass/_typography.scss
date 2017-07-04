@@ -1,0 +1,28 @@
+section asset{
+  h1.typo,
+  h2.typo,
+  h3.typo {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #333;
+  }
+  h1.typo {
+    font-size: 72px;
+    line-height: 88px;
+  }
+  h2.typo {
+    font-size: 48px;
+    line-height: 54px;
+  }
+  h3.typo {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  p.typo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+}

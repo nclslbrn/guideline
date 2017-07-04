@@ -1,0 +1,33 @@
+article {
+  display: block;
+  background-color: #fefefe;
+
+  .entry-thumb {
+    margin: .5rem 0;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .entry-body {
+
+    margin: -2rem 0 0 0;
+    padding: .2rem 1rem;
+
+    p {
+
+    }
+    .meta {
+      margin: 0;
+      padding: 0;
+    }
+
+    .button {
+      background-color: #fefefe;
+      box-shadow: 0 2px 4px #ccc;
+    }
+
+    background-color: hsl(56, 100%, 63%);
+  }
+  box-shadow: 0 2px 4px #ccc;
+}

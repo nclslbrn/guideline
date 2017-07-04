@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "autoprefixer": "^7.1.1",
+    "flexboxgrid-sass": "^8.0.5",
     "gulp": "^3.9.1",
     "gulp-install": "^1.1.0"
   },
@@ -15,6 +16,7 @@
     "gulp-cache": "^0.4.6",
     "gulp-clean-css": "^3.4.2",
     "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^1.1.0",
     "gulp-ignore": "^2.0.2",
     "gulp-imagemin": "^3.2.0",
     "gulp-notify": "^3.0.0",

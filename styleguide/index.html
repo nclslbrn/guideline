@@ -9,183 +9,328 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Guideline | N.Lebrun</title>
-	<link href="styles/main.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 </head>
 
 <body>
   <div class="site">
     <aside>
       <section class="logo">
-        <img src="http://via.placeholder.com/300x200">
-      </section>
+  <h1>STYLEGUIDE</h1>
+</section>
 
-      <section class="menu">
-        <nav>
-          <ul>
-            <li><a href="#colors">Colors</a></li>
-            <li><a href="#grids">Grids</a></li>
-            <li><a href="#iconography">Iconography</a></li>
-            <li><a href="#layer">Layer</a></li>
-            <li><a href="#typography">Typography</a></li>
-            <li><a href="#button">Button</a></li>
-          </ul>
-        </nav>
-      </section>
+<section class="menu">
+  <nav id="aside--navigation">
+    <ul class="nav nav-tabs" role="tablist">
+      <li><a href="#colors">Colors</a></li>
+      <li><a href="#grid">Grid</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#iconography">Iconography</a></li>
+      <li><a href="#layer">Layer</a></li>
+      <li><a href="#button">Button</a></li>
+    </ul>
+  </nav>
+</section>
+<section class="copyright">
+  <a href="https://studio.nicolas-lebrun.fr">
+    &copy; Nicolas Lebrun
+  </a>
+</section>
+
     </aside>
 
     <main>
       <section id="colors">
-        <header>
-          <h1>Colors</h1>
-        </header>
-				<asset>
-					<h3>BRAND</h3>
-					<div class="colors-grid">
+  <header>
+    <h1>Colors</h1>
+  </header>
+  <asset>
+    <h3>BRAND</h3>
+    <div class="colors-row">
 
-						<color class="brand-01">
-							<definition>
-								<ref>HEX: #241A2E</ref>
-								<ref>HSL: hsl(270, 28%, 14%)</ref>
-							</definition>
-						</color>
+      <color class="brand-01">
+        <definition>
+          <ref>HEX: #FFF140</ref>
+          <ref>HSL: hsl(56, 75%, 100%)</ref>
+        </definition>
+      </color>
 
-						<color class="brand-02">
-							<definition>
-								<ref>HEX: #B3152A</ref>
-								<ref>HSL: hsl(352, 79%, 39%)</ref>
-							</definition>
-						</color>
+      <color class="brand-02">
+        <definition>
+          <ref>HEX: #819964</ref>
+          <ref>HSL: hsl(87, 35%, 60%)</ref>
+        </definition>
+      </color>
 
-						<color class="brand-03">
-							<definition>
-								<ref>HEX: #F5155A</ref>
-								<ref>HSL: hsl(342, 92%, 52%)</ref>
-							</definition>
-						</color>
+      <color class="brand-03">
+        <definition>
+          <ref>HEX: #7FCC1F</ref>
+          <ref>HSL: hsl(87, 85%, 80%)</ref>
+        </definition>
+      </color>
 
-						<color class="brand-04">
-							<definition>
-								<ref>HEX: #B3152A</ref>
-								<ref>HSL: hsl(352, 79%, 39%)</ref>
-							</definition>
-						</color>
+      <color class="brand-04">
+        <definition>
+          <ref>HEX: #1F49CC</ref>
+          <ref>HSL: hsl(225, 85%, 80%)</ref>
+        </definition>
+      </color>
 
-					</div>
-					<H3>USER INTERFACE</H3>
-					<div class="colors-grid">
+    </div>
+    <H3>USER INTERFACE</H3>
+    <div class="colors-row">
 
-						<color class="info">
-							<definition>
-								<ref>HEX: #d7ecfa</ref>
-								<ref>HSL: hsl(204, 14%, 98%)</ref>
-							</definition>
-						</color>
+      <color class="info">
+        <definition>
+          <ref>HEX: #d7ecfa</ref>
+          <ref>HSL: hsl(204, 14%, 98%)</ref>
+        </definition>
+      </color>
 
-						<color class="success">
-							<definition>
-								<ref>HEX: #e1faea</ref>
-								<ref>HSL: hsl(142, 10%, 98%)</ref>
-							</definition>
-						</color>
+      <color class="success">
+        <definition>
+          <ref>HEX: #e1faea</ref>
+          <ref>HSL: hsl(142, 10%, 98%)</ref>
+        </definition>
+      </color>
 
-						<color class="warning">
-							<definition>
-								<ref>HEX: #fff3d9</ref>
-								<ref>HSL: hsl(41, 15%, 100%)</ref>
-							</definition>
-						</color>
+      <color class="warning">
+        <definition>
+          <ref>HEX: #fff3d9</ref>
+          <ref>HSL: hsl(41, 15%, 100%)</ref>
+        </definition>
+      </color>
 
-						<color class="error">
-							<definition>
-								<ref>HEX: #f7e4e1</ref>
-								<ref>HSL: hsl(8, 9%, 97%)</ref>
-							</definition>
-						</color>
+      <color class="error">
+        <definition>
+          <ref>HEX: #f7e4e1</ref>
+          <ref>HSL: hsl(8, 9%, 97%)</ref>
+        </definition>
+      </color>
 
-					</div>
-				</asset>
-      </section>
+    </div>
+  </asset>
+</section>
 
-      <section id="grids">
-        <header>
-          <h1>Grids</h1>
-        </header>
-				<div class="grid">
-					<div class="col-6 column">
-						.col-6
-					</div>
-					<div class="col-6 column">
-						.col-6
-					</div>
-				</div>
+      <section id="grid">
+  <header>
+    <h1>Grid</h1>
+  </header>
+  <div class="row">
+    <div class="col-md-6 col-xs-12 column">
+      <def>col-md-6 col-xs-12</def>
+    </div>
+    <div class="col-md-6 column">
+      <def>col-md-6 col-xs-12</def>
+    </div>
+  </div>
 
-				<div class="grid">
-					<div class="col-4 column">
-						.col-4
-					</div>
-					<div class="col-4 column">
-						.col-4
-					</div>
-					<div class="col-4 column">
-						.col-4
-					</div>
-				</div>
+  <div class="row">
+    <div class="col-md-4 column">
+      <def>col-md-4 col-xs-6</def>
+    </div>
+    <div class="col-md-4 col-xs-6 column">
+      <def>col-md-4 col-xs-6</def>
+    </div>
+    <div class="col-md-4 col-xs-6 column">
+      <def>col-md-4 col-xs-6</def>
+    </div>
+  </div>
 
-				<div class="grid">
-					<div class="col-3 column">
-						.col-3
-					</div>
-					<div class="col-3 column">
-						.col-3
-					</div>
-					<div class="col-3 column">
-						.col-3
-					</div>
-					<div class="col-3 column">
-						.col-3
-					</div>
-				</div>
-				<asset>
+  <div class="row">
+    <div class="col-md-3 col-xs-6 column">
+      <def>col-md-3 col-xs-6</def>
+    </div>
+    <div class="col-md-3 col-xs-6 column">
+      <def>col-md-3 col-xs-6</def>
+    </div>
+    <div class="col-md-3 col-xs-6 column">
+      <def>col-md-3 col-xs-6</def>
+    </div>
+    <div class="col-md-3 col-xs-6 column">
+      <def>col-md-3 col-xs-6</def>
+    </div>
+  </div>
+  <asset>
 
-				</asset>
-      </section>
-
-      <section id="iconography">
-        <header>
-          <h1>Iconography</h1>
-        </header>
-				<asset>
-
-				</asset>
-      </section>
-
-      <section id="layer">
-        <header>
-          <h1>Layer</h1>
-        </header>
-				<asset>
-
-				</asset>
-      </section>
+  </asset>
+</section>
 
       <section id="typography">
-        <header>
-          <h1>Typography</h1>
-        </header>
-				<asset>
+  <header>
+    <h1>Typography</h1>
+  </header>
+  <asset class="row">
+    <div class="col-md-6 col-xs-12 column">
+      <h3>Heading</h3>
 
-				</asset>
-      </section>
+      <h1 class="typo">I am a web developer</h1>
+
+      <p>Oswald regular </p>
+      <p>Font Size: 72px</p>
+      <p>line height: 88px</p>
+      <p>Letter spacing: 0px</p>
+    </div>
+    <div class="col-md-6 col-xs-12 column">
+      <h3>Paragraph</h3>
+      <br />
+      <p class="typo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed ac ultrices velit. Nullam dolor tellus, dapibus sed dolor eu, fermentum tempus ante.
+        Duis a nisl eget dolor sagittis dignissim. Nunc suscipit ipsum ex, sed scelerisque lacus pulvinar id.
+        In hac habitasse platea dictumst. Proin eget elit a augue maximus condimentum vitae mattis sem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vestibulum pretium ornare justo, eget feugiat ipsum sollicitudin non.
+        Vestibulum nisi purus, pharetra vitae sodales vel, tristique non ante.
+        Nam sollicitudin porta orci sit amet rutrum.
+      </p>
+      <br />
+      <p>Open sans </p>
+      <p>Font Size: 14px</p>
+      <p>line height: 30px</p>
+      <p>Letter spacing: 0px</p>
+    </div>
+    </asset>
+</section>
+
+      <section id="iconography">
+  <header>
+    <h1>Iconography</h1>
+  </header>
+  <asset class="row">
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/atom.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/bower.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/code.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/css3.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/database.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/github.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/grunt.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/gulp.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/html5.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/java.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/javascript.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/jquery_logo.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/less.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/markdown.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/modernizr.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/mysql.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/nodejs.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/npm.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/photoshop.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/php.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/terminal.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/sass.svg">
+    </div>
+    <div class="col-md-2 col-xs-4 column">
+      <img src="images/wordpress.svg">
+    </div>
+    <div class="col-md-12">
+      <a href="http://vorillaz.github.io/devicons/#/main" target="_blank">Devicons by Vorillaz</a>
+    </div>
+  </asset>
+</section>
+
+      <section id="layer">
+  <header>
+    <h1>Layer</h1>
+  </header>
+  <asset class="row">
+    <article class="col-xs-12 col-md-6">
+      <div class="row">
+      <div class="entry-thumb col-xs-12 col-md-8">
+        <img src="images/FORUM-mockup.png">
+
+        <div class="meta row">
+          <div class="col-md-4 column">
+            <img src="images/php.svg">
+          </div>
+          <div class="col-md-4 column">
+            <img src="images/sass.svg">
+          </div>
+          <div class="col-md-4 column">
+            <img src="images/wordpress.svg">
+          </div>
+        </div>
+
+      </div>
+      <div class="entry-body col-xs-12 col-md-4">
+        <h3 class="typo">Forum de Nîmes</h3>
+
+        <p class="typo">
+          Site présentant un Forum sur l’écologie à Nîmes,
+          ayant aussi comme vocation de pouvoir s’inscrire
+          à des tables rondes et des conférences.
+        </p>
+
+        <a class="button brand-04" href="#"><span>En savoir +</span></a>
+      </div>
+    </article>
+  </asset>
+</section>
 
       <section id="button">
-        <header>
-          <h1>Button</h1>
-        </header>
-				<asset>
-
-				</asset>
-      </section>
+  <header>
+    <h1>Button</h1>
+  </header>
+  <asset>
+    <br />
+    <h3>Default state</h3>
+    <a href="#" class="button brand-01"><span>Click me</span></a>
+    <a href="#" class="button brand-02"><span>Click me</span></a>
+    <a href="#" class="button brand-03"><span>Click me</span></a>
+    <a href="#" class="button brand-04"><span>Click me</span></a>
+    <br />
+    <h3>Hover state</h3>
+    <a href="#" class="button brand-01 hover"><span>Click me</span></a>
+    <a href="#" class="button brand-02 hover"><span>Click me</span></a>
+    <a href="#" class="button brand-03 hover"><span>Click me</span></a>
+    <a href="#" class="button brand-04 hover"><span>Click me</span></a>
+  </asset>
+</section>
 
     </main>
   </div>

@@ -16,6 +16,7 @@ To install dependancies : `npm install`
 To run gulp tasks : `gulp`
 
 Specific gulp task :
+- HTML include `gulp fileinclude`
 - Sass processing `gulp styles`
 - javascript linting and minifying `gulp scripts`
 - images minifying (jpg, png, gif & svg) `gulp images`

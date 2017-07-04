@@ -1,19 +1,22 @@
-$accent-color: #2ecc71;
+$brand-01: #FFF140;
+$brand-02: #C4A934;
+$brand-03: #5B574E;
+$brand-04: #1F2C2B;
 
 .brand-01{
-  background-color: #241A2E;
+  background-color: $brand-01;
 }
 
 .brand-02{
-  background-color: #B3152A;
+  background-color: $brand-02;
 }
 
 .brand-03{
-  background-color: #F5155A;
+  background-color: $brand-03;
 }
 
 .brand-04{
-  background-color: #F3990E;
+  background-color: $brand-04;
 }
 
 
